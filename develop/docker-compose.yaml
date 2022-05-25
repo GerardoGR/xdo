@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  db:
+    image: postgres:14.3
+    restart: always
+    environment:
+      POSTGRES_USER: xdo
+      POSTGRES_PASSWORD: my-secret-password
+    volumes:
+      - ./initdb.d:/docker-entrypoint-initdb.d
+    ports:
+      - 5432:5432

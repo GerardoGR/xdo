@@ -1,0 +1,6 @@
+# ViM master-race
+*.swp
+*.swa
+
+# dist
+dist/
